@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teja Sai Yallamelli — Software Engineer Portfolio</title>
+  <meta name="description" content="Portfolio of Teja Sai Yallamelli — Software Engineer focused on backend systems, distributed architecture, and applied machine learning.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="brand">
+        <span class="brand-mark">TS</span>
+        <span class="brand-name">Teja Sai Yallamelli</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#publications" class="nav-link">Publications</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link nav-cta">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HOME / HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-text">
+
+        <h1>Hi, I'm<br><span class="accent">Teja Sai Yallamelli</span></h1>
+        <p class="hero-desc">
+          I'm a <strong>Software Engineer</strong> focused on
+          <strong class="accent-text">backend systems</strong>,
+          <strong class="accent-text">distributed architecture</strong>, and
+          <strong class="accent-text">applied machine learning</strong>.
+          I enjoy building scalable, production-ready applications that solve real problems.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Say Hello</a>
+          <a href="#projects" class="btn btn-ghost">View Projects</a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <div class="photo-card">
+          <img src="profile.jpg" alt="Teja Sai Yallamelli">
+          <span class="photo-tag">&lt;/&gt; building things</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <!-- <p class="eyebrow">// about</p> -->
+      <h2>A little about me</h2>
+      <div class="about-grid">
+        <p class="about-text">
+          I'm a final-year Electronics and Computer Engineering student who builds full-stack
+          and ML-powered systems end to end — from model training to production-ready APIs.
+          My work spans distributed microservices, computer vision pipelines, encrypted
+          communication systems, and applied ML for real-world prediction problems.
+          <br><br>
+        </p>
+        <ul class="about-facts">
+          <li><span class="fact-label">Focus</span><span>Backend · Distributed Systems · ML</span></li>
+          <li><span class="fact-label">Education</span><span>B.Tech, ECE — Amrita Vishwa Vidyapeetham (2026)</span></li>
+          <li><span class="fact-label">Based in</span><span>Bengaluru, Karnataka, India</span></li>
+          <li><span class="fact-label">Open to</span><span>SWE · Backend · ML Engineer roles</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section section-alt" id="projects">
+    <div class="section-inner">
+      <!-- <p class="eyebrow">// projects</p> -->
+      <h2>Things I've built</h2>
+
+      <div class="card-grid">
+
+        <article class="card">
+          <h3>Distributed Traffic Surveillance System</h3>
+          <p>Fault-tolerant distributed system for real-time traffic surveillance using an async master-worker architecture, with YOLOv11 vehicle detection, YOLOv9 helmet-violation detection, and PaddleOCR license-plate recognition across independently scalable microservices.</p>
+          <ul class="tag-list">
+            <li>FastAPI</li><li>RabbitMQ</li><li>Redis</li><li>YOLOv11</li><li>Docker</li>
+          </ul>
+          <a href="#" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="card">
+          <h3>SafeRoute — Crisis Management & Evacuation</h3>
+          <p>Disaster management platform combining ML severity prediction (92.6% earthquake / 91.88% flood accuracy) with multi-modal route optimization across roadways, airways, and waterways. Presented at ICSSES 2025.</p>
+          <ul class="tag-list">
+            <li>FastAPI</li><li>scikit-learn</li><li>OSMnx</li><li>Folium</li>
+          </ul>
+          <a href="#" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="card">
+          <h3>CipherTalk — Encrypted Chat + ML Threat Detection</h3>
+          <p>End-to-end encrypted chat platform with AES-256 encryption, JWT auth, OTP onboarding, and a CatBoost phishing classifier reaching 96%+ accuracy with sub-10ms inference.</p>
+          <ul class="tag-list">
+            <li>FastAPI</li><li>CatBoost</li><li>MongoDB</li><li>WebSockets</li>
+          </ul>
+          <a href="#" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="card">
+          <h3>Cloud Code Compiler</h3>
+          <p>AI-assisted online code compiler supporting Python, JavaScript, C++, and Java, with a React/TypeScript frontend and local LLM (Ollama) integration for real-time code suggestions and error explanations.</p>
+          <ul class="tag-list">
+            <li>React</li><li>TypeScript</li><li>FastAPI</li><li>Ollama</li>
+          </ul>
+          <a href="#" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="card">
+          <h3>IPL Player Performance Predictor</h3>
+          <p>ML web app predicting IPL batting performance by match phase (Powerplay, Middle Overs, Death Overs) using an XGBoost regression model, with an interactive Streamlit interface.</p>
+          <ul class="tag-list">
+            <li>Streamlit</li><li>XGBoost</li><li>Pandas</li>
+          </ul>
+          <a href="#" class="card-link">View on GitHub →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICATIONS ============ -->
+  <section class="section" id="certifications">
+    <div class="section-inner">
+      <!-- <p class="eyebrow">// certifications</p> -->
+      <h2>Certifications</h2>
+
+      <div class="list-grid">
+
+        <!-- AWS Cloud Operations -->
+        <div class="list-item">
+          <h3>AWS Academy Graduate – Cloud Operations</h3>
+
+          <p class="muted">
+            Amazon Web Services (AWS) • September 2025
+          </p>
+
+          <p>
+            Validated knowledge of AWS Cloud Operations, including cloud infrastructure,
+            monitoring, security, networking, IAM, EC2, S3, and operational best practices.
+          </p>
+
+          <div class="cert-links">
+            <a href="https://www.credly.com/badges/c2367ed6-263d-49a0-af1b-12ca37333e00/public_url" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
+                   alt="AWS Logo" class="cert-logo">
+            </a>
+
+            <a href="https://www.credly.com/badges/c2367ed6-263d-49a0-af1b-12ca37333e00/public_url" target="_blank">
+              <img src="https://img.shields.io/badge/View-Credential-orange?style=for-the-badge&logo=credly&logoColor=white"
+                   alt="View Credential">
+            </a>
+          </div>
+        </div>
+
+        <!-- AWS ML Foundations -->
+        <div class="list-item">
+          <h3>AWS Academy Graduate – Machine Learning Foundations</h3>
+
+          <p class="muted">
+            Amazon Web Services (AWS) • October 2025
+          </p>
+
+          <p>
+            Demonstrated foundational knowledge of machine learning concepts,
+            supervised and unsupervised learning, data preparation, model evaluation,
+            and AWS AI/ML services.
+          </p>
+
+          <div class="cert-links">
+            <a href="https://www.credly.com/earner/earned/share/8cacf645-4674-47f3-be5c-07fd6e6b825c" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
+                   alt="AWS Logo" class="cert-logo">
+            </a>
+
+            <a href="https://www.credly.com/earner/earned/share/8cacf645-4674-47f3-be5c-07fd6e6b825c" target="_blank">
+              <img src="https://img.shields.io/badge/View-Credential-orange?style=for-the-badge&logo=credly&logoColor=white"
+                   alt="View Credential">
+            </a>
+          </div>
+        </div>
+
+        <!-- Git Course -->
+        <div class="list-item">
+          <h3>Git, GitHub & GitLab Fundamentals for Software Developers</h3>
+
+          <p class="muted">
+            Udemy • July 2025
+          </p>
+
+          <p>
+            Learned Git version control, branching strategies, pull requests,
+            repository management, and collaborative development workflows using
+            GitHub and GitLab.
+          </p>
+
+          <div class="cert-links">
+            <a href="https://www.udemy.com/certificate/UC-0fadb868-0158-470e-8f85-b82d5eaa32d9/" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Udemy_logo.svg"
+                   alt="Udemy Logo" class="cert-logo">
+            </a>
+
+            <a href="https://www.udemy.com/certificate/UC-0fadb868-0158-470e-8f85-b82d5eaa32d9/" target="_blank">
+              <img src="https://img.shields.io/badge/View-Certificate-A435F0?style=for-the-badge&logo=udemy&logoColor=white"
+                   alt="View Certificate">
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PUBLICATIONS ============ -->
+  <section class="section section-alt" id="publications">
+    <div class="section-inner">
+      <!-- <p class="eyebrow">// publications</p> -->
+      <h2>Publications</h2>
+
+      <div class="list-grid">
+
+        <!-- Publication 1 -->
+        <div class="list-item">
+          <h3>
+            <a href="https://doi.org/10.1109/ICSSES64899.2025.11009902"
+               target="_blank" rel="noopener noreferrer">
+              SafeRoute: Multi-Modal Optimization for Crisis Management and Evacuation
+            </a>
+          </h3>
+
+          <p class="muted">
+            IEEE ICSSES 2025 • 3rd International Conference on Smart Systems for Applications in Electrical Sciences
+            <br>
+            <strong>Published:</strong> March 21, 2025
+          </p>
+
+          <p>
+            Developed a GIS-integrated emergency response system leveraging heuristic search and
+            A* pathfinding algorithms for optimized multi-modal evacuation during floods and
+            earthquakes. The solution improves disaster resilience through dynamic route planning,
+            resource allocation, and risk-aware decision making.
+          </p>
+
+          <div class="publication-links">
+
+            <a href="https://ieeexplore.ieee.org/" target="_blank">
+              <img class="publisher-logo"
+                   src="https://upload.wikimedia.org/wikipedia/commons/0/00/IEEE_logo.svg"
+                   alt="IEEE">
+            </a>
+
+            <a href="https://doi.org/10.1109/ICSSES64899.2025.11009902"
+               target="_blank">
+              <img src="https://img.shields.io/badge/IEEE-Xplore-00629B?style=for-the-badge&logo=ieee&logoColor=white"
+                   alt="IEEE Xplore">
+            </a>
+
+            <a href="https://doi.org/10.1109/ICSSES64899.2025.11009902"
+               target="_blank">
+              <img src="https://img.shields.io/badge/DOI-10.1109%2FICSSES64899.2025.11009902-blue?style=for-the-badge"
+                   alt="DOI">
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Publication 2 -->
+        <div class="list-item">
+          <h3>
+            <a href="https://ieeexplore.ieee.org/document/11437166"
+               target="_blank" rel="noopener noreferrer">
+              Embedded VPN Router Using Raspberry Pi
+            </a>
+          </h3>
+
+          <p class="muted">
+            IEEE ETCOM 2026 • IEEE International Conference on Emerging Trends in Computing and Communication
+            <br>
+            <strong>Published:</strong> March 26, 2026
+          </p>
+
+          <p>
+            Designed and implemented a secure VPN router using Raspberry Pi 5, WireGuard,
+            and OpenWrt. The system delivers efficient encrypted networking, real-time traffic
+            monitoring, multi-client scalability, and lightweight resource utilization for
+            secure edge computing applications.
+          </p>
+
+          <div class="publication-links">
+
+            <a href="https://ieeexplore.ieee.org/" target="_blank">
+              <img class="publisher-logo"
+                   src="https://upload.wikimedia.org/wikipedia/commons/0/00/IEEE_logo.svg"
+                   alt="IEEE">
+            </a>
+
+            <a href="https://ieeexplore.ieee.org/document/11437166"
+               target="_blank">
+              <img src="https://img.shields.io/badge/IEEE-Xplore-00629B?style=for-the-badge&logo=ieee&logoColor=white"
+                   alt="IEEE Xplore">
+            </a>
+
+            <a href="https://ieeexplore.ieee.org/document/11437166"
+               target="_blank">
+              <img src="https://img.shields.io/badge/View-Paper-success?style=for-the-badge"
+                   alt="View Paper">
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <!-- <p class="eyebrow">// skills</p> -->
+      <h2>Tech I work with</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4>Languages & Backend</h4>
+          <ul class="tag-list">
+            <li>Python</li><li>FastAPI</li><li>Node.js</li><li>SQL</li><li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Frontend</h4>
+          <ul class="tag-list">
+            <li>React</li><li>TypeScript</li><li>HTML</li><li>CSS</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>ML & Data</h4>
+          <ul class="tag-list">
+            <li>XGBoost</li><li>scikit-learn</li><li>CatBoost</li><li>Computer Vision</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Infra & Systems</h4>
+          <ul class="tag-list">
+            <li>Docker</li><li>RabbitMQ</li><li>Redis</li><li>MongoDB</li><li>Git / GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section-alt" id="contact">
+    <div class="section-inner">
+      <!-- <p class="eyebrow">// contact</p> -->
+      <h2>Let's talk</h2>
+      <p class="contact-lead">Open to Software Engineer, Backend Engineer, and ML Engineer opportunities — feel free to reach out.</p>
+
+      <div class="contact-grid">
+        <a href="mailto:tejasairavikumar@gmail.com" class="contact-item">
+          <span class="fact-label">Email</span>
+          <span>tejasairavikumar@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/teja-sai-yallamelli-a5685b320/" target="_blank" rel="noopener" class="contact-item">
+          <span class="fact-label">LinkedIn</span>
+          <span>Teja Sai Yallamelli</span>
+        </a>
+        <a href="https://github.com/Tejasai120603" target="_blank" rel="noopener" class="contact-item">
+          <span class="fact-label">GitHub</span>
+          <span>Tejasai120603</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Teja Sai Yallamelli. Built with care.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
